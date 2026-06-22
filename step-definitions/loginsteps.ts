@@ -1,6 +1,7 @@
 import {Given, When, Then} from '@cucumber/cucumber';
 import { LoginPage } from '../pages/loginpage';
 import {page} from '../step-definitions/hooks';
+import { expect } from '@playwright/test';
 
 let loginPage:LoginPage;
 
@@ -59,4 +60,26 @@ When('user clicks logout button',async function(){
 
 Then('user is back on login page',async function(){
     await loginPage.loginVisible
+});
+
+When('user enters {string} and {string}', async function (username, password){
+  await loginPage.login(username,password);
+  await loginPage.clickloginButton();
+
+})
+
+Then ('login result should be {string}', async function (result){
+ switch(result){
+    case 'Success': 
+    await loginPage.dashboardVisible();
+    break;
+    
+    case 'Failure':
+    await loginPage.errorVisible();
+    break;
+
+    default:
+    throw new Error(`Invalid value of ${result}`);
+
+ }
 });

@@ -8,7 +8,8 @@ module.exports = {
             "ts-node/register"
         ],
         format: [
-            "progress"
+            "progress",
+            "json:reports/cucumber-report.json"
         ]
     }
 };

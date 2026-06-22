@@ -22,4 +22,16 @@ Scenario: Verify logout functionality
     Given user is already logged in 
     When user clicks logout button
     Then user is back on login page
+
+
+Scenario: Login with multiple credentials \
+    Given user is on login page
+    When user enters "<username>" and "<password>" 
+    Then login result should be "<result>" 
+
+    Examples:
+        | username | password | result |
+        | tomsmith  | SuperSecretPassword!  | Success  |
+        | tom  | wrongPassword!  | Failure  |
+
     

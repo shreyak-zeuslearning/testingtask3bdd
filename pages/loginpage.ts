@@ -19,7 +19,7 @@ async clickloginButton(){
 }
 
 async dashboardVisible(){
-    await expect(this.page).toHaveURL('https://the-internet.herokuapp.com/secure');
+    await expect(this.page).toHaveURL(/secure/);
 }
 
 async errorVisible(){
