@@ -4,91 +4,70 @@
     "elements": [
       {
         "description": "",
-        "id": "form-with-multiple-fields;submit-form-with-multiple-fields",
+        "id": "login-functionality;successful-login-with-valid-credentials",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Submit form with multiple fields",
+        "line": 3,
+        "name": "Successful login with valid credentials",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 625642200
+              "duration": 650987400
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "user is on form page",
+            "line": 4,
+            "name": "user is on login page",
             "match": {
-              "location": "step-definitions\\formsteps.ts:8"
+              "location": "step-definitions\\loginsteps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 1881563299
+              "status": "failed",
+              "duration": 7367699,
+              "error_message": "page.goto: Timeout 1ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://the-internet.herokuapp.com/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.gotoLoginPage (C:\\Users\\shreya.kathe\\Desktop\\Tasks\\testingtask3bdd\\pages\\loginpage.ts:7:21)\n    at World.<anonymous> (C:\\Users\\shreya.kathe\\Desktop\\Tasks\\testingtask3bdd\\step-definitions\\loginsteps.ts:10:21)"
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "field",
-                      "value"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "name",
-                      "John"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "john@test.com"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "currAdd",
-                      "LoweParel Mumbai"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "permAdd",
-                      "Borivali Mumbai"
-                    ]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "user fills the form with following data:",
+            "line": 5,
+            "name": "user enters valid username and password",
             "match": {
-              "location": "step-definitions\\formsteps.ts:13"
+              "location": "step-definitions\\loginsteps.ts:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 242598500
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "step-definitions\\loginsteps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "form should be submitted successfully",
+            "line": 7,
+            "name": "user should be navigated to dashboard",
             "match": {
-              "location": "step-definitions\\formsteps.ts:25"
+              "location": "step-definitions\\loginsteps.ts:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 27434699
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -96,7 +75,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 325265100
+              "duration": 216364799
             }
           }
         ],
@@ -104,11 +83,11 @@
         "type": "scenario"
       }
     ],
-    "id": "form-with-multiple-fields",
+    "id": "login-functionality",
     "line": 1,
     "keyword": "Feature",
-    "name": "Form with multiple fields",
+    "name": "Login functionality",
     "tags": [],
-    "uri": "features\\formpage.feature"
+    "uri": "features\\loginpage.feature"
   }
 ]
