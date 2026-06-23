@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js || npm run posttest",
-    "posttest": "npx ts-node generate-report.ts"
+    "test": "npx cucumber-js",
+    "posttest": "node generate-report.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "@cucumber/cucumber": "^13.0.0",
     "@playwright/test": "^1.61.0",
     "@types/node": "^26.0.0",
+    "cucumber-html-reporter": "^7.2.0",
     "multiple-cucumber-html-reporter": "^4.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
