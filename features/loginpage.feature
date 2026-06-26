@@ -1,37 +1,36 @@
-Feature: Login functionality 
- 
-Scenario: Successful login with valid credentials 
-  Given user is on login page 
-  When user enters valid username and password 
-  And clicks on login button 
-  Then user should be navigated to dashboard 
- 
-Scenario: Invalid login attempt 
-  Given user is on login page 
-  When user enters invalid credentials 
-  And clicks on login button
-  Then error message should be displayed
+Feature: Login functionality
 
-Scenario: Verify error message visibility 
+  Scenario: Successful login with valid credentials
+    Given user is on login page
+    When user enters valid username and password
+    And clicks on login button
+    Then user should be navigated to dashboard
+
+  Scenario: Invalid login attempt
     Given user is on login page
     When user enters invalid credentials
     And clicks on login button
-    Then error message should be displayed 
+    Then error message should be displayed
 
-Scenario: Verify logout functionality 
-    Given user is already logged in 
+  Scenario: Verify error message visibility
+    Given user is on login page
+    When user enters invalid credentials
+    And clicks on login button
+    Then error message should be displayed
+
+  Scenario: Verify logout functionality
+    Given user is already logged in
     When user clicks logout button
     Then user is back on login page
 
 
-Scenario: Login with multiple credentials \
+  Scenario: Login with multiple credentials \
     Given user is on login page
-    When user enters "<username>" and "<password>" 
-    Then login result should be "<result>" 
+    When user enters "<username>" and "<password>"
+    Then login result should be "<result>"
 
     Examples:
-        | username | password | result |
-        | tomsmith  | SuperSecretPassword!  | Success  |
-        | tom  | wrongPassword!  | Failure  |
+      | username | password             | result  |
+      | tomsmith | SuperSecretPassword! | Success |
+      | tom      | wrongPassword!       | Failure |
 
-    

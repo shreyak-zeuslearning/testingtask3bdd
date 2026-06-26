@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 598692299
+              "duration": 1290032499
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6531841099
+              "duration": 10198490099
             }
           },
           {
@@ -75,7 +75,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 233337499
+              "duration": 218132800
             }
           },
           {
@@ -84,11 +84,11 @@
             "line": 12,
             "name": "form should be submitted successfully",
             "match": {
-              "location": "step-definitions\\formsteps.ts:25"
+              "location": "step-definitions\\formsteps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 32158699
+              "duration": 10967099
             }
           },
           {
@@ -96,7 +96,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 256763399
+              "duration": 248308399
             }
           }
         ],
@@ -126,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 650736499
+              "duration": 567936900
             }
           },
           {
@@ -135,11 +135,11 @@
             "line": 4,
             "name": "user is on login page",
             "match": {
-              "location": "step-definitions\\loginsteps.ts:8"
+              "location": "step-definitions\\loginsteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 3410128300
+              "duration": 3817696699
             }
           },
           {
@@ -152,7 +152,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56402299
+              "duration": 52079900
             }
           },
           {
@@ -161,11 +161,11 @@
             "line": 6,
             "name": "clicks on login button",
             "match": {
-              "location": "step-definitions\\loginsteps.ts:22"
+              "location": "step-definitions\\loginsteps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 469764499
+              "duration": 510236899
             }
           },
           {
@@ -174,11 +174,11 @@
             "line": 7,
             "name": "user should be navigated to dashboard",
             "match": {
-              "location": "step-definitions\\loginsteps.ts:27"
+              "location": "step-definitions\\loginsteps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 50045200
+              "duration": 19770000
             }
           },
           {
@@ -186,7 +186,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 203619000
+              "duration": 201201100
             }
           }
         ],
@@ -205,7 +205,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 628618300
+              "duration": 553460399
             }
           },
           {
@@ -214,11 +214,11 @@
             "line": 10,
             "name": "user is on login page",
             "match": {
-              "location": "step-definitions\\loginsteps.ts:8"
+              "location": "step-definitions\\loginsteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 7457884700
+              "duration": 3888356800
             }
           },
           {
@@ -227,11 +227,11 @@
             "line": 11,
             "name": "user enters invalid credentials",
             "match": {
-              "location": "step-definitions\\loginsteps.ts:32"
+              "location": "step-definitions\\loginsteps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 48955799
+              "duration": 40809599
             }
           },
           {
@@ -240,11 +240,11 @@
             "line": 12,
             "name": "clicks on login button",
             "match": {
-              "location": "step-definitions\\loginsteps.ts:22"
+              "location": "step-definitions\\loginsteps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 758399700
+              "duration": 555202600
             }
           },
           {
@@ -253,11 +253,11 @@
             "line": 13,
             "name": "error message should be displayed",
             "match": {
-              "location": "step-definitions\\loginsteps.ts:40"
+              "location": "step-definitions\\loginsteps.ts:30"
             },
             "result": {
               "status": "passed",
-              "duration": 37902000
+              "duration": 33105599
             }
           },
           {
@@ -265,284 +265,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 244551600
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-functionality;verify-error-message-visibility",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Verify error message visibility",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 565565800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 16,
-            "name": "user is on login page",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5390981100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "user enters invalid credentials",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 48204499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "clicks on login button",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 562635299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "error message should be displayed",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 36208700
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 220449300
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-functionality;verify-logout-functionality",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Verify logout functionality",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 611681500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "user is already logged in",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4112255199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "user clicks logout button",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 623966399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "user is back on login page",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 210699
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 208423500
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-functionality;login-with-multiple-credentials-\\",
-        "keyword": "Scenario",
-        "line": 34,
-        "name": "Login with multiple credentials \\",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 593971699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
-            "name": "user is on login page",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6548568400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 29,
-            "name": "user enters \"tomsmith\" and \"SuperSecretPassword!\"",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:65"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 552852499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "login result should be \"Success\"",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:71"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 43625299
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 225233999
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-functionality;login-with-multiple-credentials-\\",
-        "keyword": "Scenario",
-        "line": 35,
-        "name": "Login with multiple credentials \\",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 560600400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
-            "name": "user is on login page",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4637877200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 29,
-            "name": "user enters \"tom\" and \"wrongPassword!\"",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:65"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 611076300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "login result should be \"Failure\"",
-            "match": {
-              "location": "step-definitions\\loginsteps.ts:71"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 39758100
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 235707900
+              "duration": 189149999
             }
           }
         ],

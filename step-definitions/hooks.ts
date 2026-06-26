@@ -1,18 +1,18 @@
-import {Before,After, setDefaultTimeout} from '@cucumber/cucumber';
-import { chromium, Browser, Page} from '@playwright/test';
+import { Before, After, setDefaultTimeout } from "@cucumber/cucumber";
+import { chromium, Browser, Page } from "@playwright/test";
 
-setDefaultTimeout(30000)
+setDefaultTimeout(30000);
 
-export let page:Page;
-export let browser:Browser;
+export let page: Page;
+export let browser: Browser;
 
-Before(async()=>{
-    browser= await chromium.launch({
-        headless:false,
-    });
-    page= await browser.newPage();
+Before(async () => {
+  browser = await chromium.launch({
+    headless: false,
+  });
+  page = await browser.newPage();
 });
 
-After(async()=>{
-    await browser.close();
-})
+After(async () => {
+  await browser.close();
+});
